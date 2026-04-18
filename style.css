@@ -426,19 +426,141 @@ img {
     align-self: center;
 }
 
-/* .vehicle-info {
-    flex: 1;
-} */
-
 .cars-section .col-md-4 {
     display: flex;
     flex-direction: column;
 }
+/* FEATURED VEHICLES END */
 
-/* @media (max-width: 1000px) {
-    .vehicle-info .read-more-btn {
-        background-color: red;
+/* CONTACTS START */
+footer {
+    height: auto;
+    background-color: #161616;
+}
+
+.contacts-section {
+    width: 60%;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+
+@media (max-width: 768px) {
+
+    .contacts-section,
+    .form-section {
         width: 100%;
     }
-} */
-/* FEATURED VEHICLES END */
+
+}
+
+.contacts-section h1 {
+    color: white;
+    padding: 40px;
+    text-align: center;
+    font-size: 36px;
+    font-weight: bold;
+}
+
+.form-section {
+    display: flex;
+    justify-content: center;
+    width: 50%;
+}
+
+form {
+    width: 100%;
+}
+
+form input,
+form textarea {
+    outline: none;
+    width: 100%;
+    float: left;
+    font-size: 18px;
+    color: #929191;
+    border-bottom: 2px solid #6f6f6f !important;
+    background-color: transparent;
+    padding: 14px 15px 0px 0px;
+    margin-bottom: 10px;
+    border: 0px;
+}
+
+.button-section {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+}
+
+.button-section button {
+    margin: 20px;
+    width: 160px;
+    height: 50px;
+    background-color: #161616;
+    color: #fc9d22;
+    border: 3px solid #fc9d22;
+}
+
+.button-section button:hover {
+    color: #f0f2f5;
+    border: 3px solid #f0f2f5;
+}
+
+.contacts {
+    margin: 30px;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+}
+
+.contacts span {
+    margin: 0px 20px;
+}
+
+.contacts span a,
+.contacts span i {
+    color: #f0f2f5;
+    text-decoration: none;
+    font-size: 16px;
+}
+
+.icon-container {
+    height: 50px;
+    margin-bottom: 30px;
+    width: 50px;
+    border-radius: 50%;
+    background-color: #f0f2f5;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.icon-container a,
+.icon-container i {
+    font-size: 22px;
+    color: #161616;
+}
+
+.social-section {
+    width: 100%;
+    display: flex;
+    justify-content: center;
+    gap: 5px;
+}
+
+.icon-container:hover,
+.icon-container a:hover,
+.icon-container i:hover {
+    background-color: #fc9d22;
+    color: #f0f2f5;
+
+}
+
+.contacts-section p {
+    color: #f0f2f5;
+    font-size: 16px;
+    margin-bottom: 30px;
+}
+
+/* CONTACTS END */
