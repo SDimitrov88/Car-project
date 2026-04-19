@@ -392,15 +392,30 @@
 
             <div class="form-section">
                 <form id="contact-form">
-                    <input type="text" id="name" placeholder="Name" name="name" required><br><br>
-                    <input type="text" id="phone" placeholder="Phone Number" name="phone" required><br><br>
-                    <input type="email" id="email" placeholder="Email" name="email" required><br><br>
-                    <textarea name="message" id="message" placeholder="Message"></textarea>
+                    <div id="inputName">
+                        <input type="text" id="name" placeholder="Name"><br><br>
+                        <!-- <p id="inputError">
+                            
+                        </p> -->
+                    </div>
+                    <div id="inputNumber">
+                        <input type="text" id="phone" placeholder="Phone Number"><br><br>
+                        <!-- <p id="inputError">
+
+                        </p> -->
+                    </div>
+                    <div id="inputEmail">
+                        <input type="email" id="email" placeholder="Email" name="email" required><br><br>
+                        <p id="inputError">
+
+                        </p>
+                    </div>
+                    <textarea name="message" id="message" placeholder="Message" name="message" required></textarea>
                     <div class="button-section">
                         <button class="map" id="map">
                             MAP
                         </button>
-        
+
                         <button type="submit" class="send-now" id="submit">
                             SEND NOW
                         </button>
