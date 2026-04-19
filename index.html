@@ -111,7 +111,7 @@
         <!-- ABOUT SECTION END -->
 
         <!-- OUR MODELS CARS START -->
-        <div class="container car-models" >
+        <div class="container car-models">
             <div class="row">
                 <div class="col-md-12 our-models" id="models">
                     <h1>
@@ -268,15 +268,6 @@
                             DEALER BRANCHES
                         </p>
                     </div>
-                    <!-- <div class="col-lg-3 col-sm-6 inner-box">
-    
-                    </div>
-                    <div class="col-lg-3 col-sm-6 inner-box">
-    
-                    </div>
-                    <div class="col-lg-3 col-sm-6 inner-box">
-    
-                    </div> -->
                 </div>
             </div>
         </div>
@@ -284,7 +275,7 @@
 
         <!-- FEATURED VEHICLES START -->
         <div class="featured-vehicles">
-            <div class="container"  id="price">
+            <div class="container" id="price">
                 <div class="row">
                     <div class="col-md-12">
                         <h1>FEATURED VEHICLES</h1>
@@ -391,7 +382,7 @@
     </main>
 
     <!-- CONTACTS START -->
-    <footer  id="contacts">
+    <footer id="contacts">
         <div class="container contacts-section">
             <div class="row">
                 <div class="col-md-12">
@@ -400,23 +391,23 @@
             </div>
 
             <div class="form-section">
-                <form action="">
-                    <input type="text" placeholder="Name"><br><br>
-                    <input type="text" placeholder="Phone Number"><br><br>
-                    <input type="email" placeholder="Email"><br><br>
-                    <textarea name="Message" id="" placeholder="Message"></textarea>
+                <form id="contact-form">
+                    <input type="text" id="name" placeholder="Name" name="name" required><br><br>
+                    <input type="text" id="phone" placeholder="Phone Number" name="phone" required><br><br>
+                    <input type="email" id="email" placeholder="Email" name="email" required><br><br>
+                    <textarea name="message" id="message" placeholder="Message"></textarea>
+                    <div class="button-section">
+                        <button class="map" id="map">
+                            MAP
+                        </button>
+        
+                        <button type="submit" class="send-now" id="submit">
+                            SEND NOW
+                        </button>
+                    </div>
                 </form>
             </div>
 
-            <div class="button-section">
-                <button class="map">
-                    MAP
-                </button>
-
-                <button class="send-now">
-                    SEND NOW
-                </button>
-            </div>
 
             <div class="contacts">
                 <span class="phone-number">
@@ -461,6 +452,7 @@
     </footer>
     <!-- CONTACTS END -->
 
+    <script src="index.js"></script>
 </body>
 
 </html>
