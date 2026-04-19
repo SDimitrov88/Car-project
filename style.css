@@ -299,7 +299,6 @@ header {
 }
 
 .inner-container {
-    flex-direction: row;
     display: flex;
     justify-content: center;
     align-items: center;
@@ -315,7 +314,6 @@ header {
 .inner-box {
     max-width: 50%;
     text-align: center;
-    flex-wrap: wrap;
 }
 
 .inner-text,
@@ -490,6 +488,7 @@ form textarea {
 .button-section {
     display: flex;
     flex-wrap: wrap;
+    width: 100%;
     justify-content: center;
 }
 
