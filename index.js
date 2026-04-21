@@ -1,5 +1,5 @@
-// https://api.api-ninjas.com/v1/carmakes - car api
-//  https://vpic.nhtsa.dot.gov/api/ - car api
+
+
 const contactForm = document.getElementById("contact-form");
 const mapSection = document.getElementById("map-section");
 const usersInfo = [];
@@ -83,11 +83,17 @@ contactForm.addEventListener("submit", (e) => {
 
 const locationBtn = document.getElementById("map");
 
-function addLocation(){
+function addOrRemoveLocation() {
+
     locationBtn.addEventListener("click", (e) => {
-        const buttonSection = document.getElementsByClassName("button-section")[0];
-        mapSection.innerHTML = '<iframe src="https://www.google.com/maps/embed?pb=!1m14!1m12!1m3!1d11731.716700620645!2d23.32271489074343!3d42.68404256668749!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!5e0!3m2!1sbg!2sbg!4v1776712173482!5m2!1sbg!2sbg" width="400" height="300" style="border:0;" allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade"></iframe>'
+        e.preventDefault();
+        console.log(mapSection.innerHTML);
+
+        if (mapSection.innerHTML === "") {
+            mapSection.innerHTML = '<iframe src="https://www.google.com/maps/embed?pb=!1m14!1m12!1m3!1d11731.716700620645!2d23.32271489074343!3d42.68404256668749!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!5e0!3m2!1sbg!2sbg!4v1776712173482!5m2!1sbg!2sbg" width="400" height="300" style="border:0;" allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade"></iframe>'
+        } else {
+            mapSection.innerHTML = '';
+        }
     });
 }
-addLocation()
-
+addOrRemoveLocation();
